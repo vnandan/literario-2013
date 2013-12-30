@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta http-equiv="content-language" content="en">
+  <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+  <meta name="viewport" content="width=device-width" />
+  <meta name="author" content="Vipul Nandan"/>
+    <title>Literario 2013</title>
+
+<script src="js/jquery.js"></script>
+<script src="js/turn.min.js"></script>    
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+     <link rel="stylesheet" type="text/css" href="css/demo.css" />
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+     
+     <script>
+function preloader() 
+{
+     var i = 0;
+
+     imageObj = new Image();
+     images = new Array();
+     for(i=1; i<=23; i++) 
+     {
+          imageObj.src="img/pages/"+i+".jpg";
+     }
+}
+$(document).ready(function(){
+    preloader();
+     $(document).ready(function(){
+								$("#magazine").turn({
+								    elevation: '200',
+								    duration: '1000',
+								    autoCenter: false,
+								    
+							    });
+								new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+								
+								$(window).bind('keydown', function(e){
+		
+		if (e.keyCode==37)
+			{
+                            $('#magazine').turn('previous');
+                            
+                            }
+		else if (e.keyCode==39)
+			$('#magazine').turn('next');
+                        //$('#magazine').turn('fin');
+			
+	});
+								
+								
+								
+								
+								
+								});
+    });
+     </script>
+   		  
+    
+    
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/mlpushmenu.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    
+</head>
+<body>
+  <img src="img/table5.jpg" id="bg"/>
+  
+  <div class="modal hide fade" id="mymodal" style="color: #000">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="end()">&times;</button>
+    <h3>Just a second!</h3>
+  </div>
+  <div class="modal-body">
+    Flip the pages by dragging the corners or <br/><br/>Use the menu or <br/><br/> Use the arrow keys!
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn btn-primary" onclick="end()">Got it!</a>
+  </div>
+</div>
+  
+  
+   <div class="container">
+			<!-- Push Wrapper -->
+			<div class="mp-pusher" id="mp-pusher">
+<a href="#" id="trigger" style="position: absolute;display: block;top: 3px;left:2px;z-index: 100;"><img src="img/right.png"/></a>
+				<!-- mp-menu -->
+				<nav id="mp-menu" class="mp-menu">
+					<div class="mp-level">
+						<h2>Literario'13</h2>
+						<ul>
+							<li id="home">
+								<a href="#">Home</a>
+								<p style="position: absolute;bottom: -2%;opacity: 0.6">Designed by<br/>Ananthakrishnan<br/>Vipul Nandan</p>
+								
+							</li>
+							<li id="about">
+								<a href="#">About</a>
+							
+							</li>
+							<li class="icon icon-arrow-left">
+								<a  href="#">Events</a>
+								<div class="mp-level">
+									<h2>Events</h2>
+									<a class="mp-back" href="#">back</a>
+									<ul>
+										<li id="event1">
+											<a href="#">Creative Writing</a>
+										</li>
+										<li id="event2">
+											<a href="#">Grammar Nazi</a>
+										</li>
+										<li id="event3">
+											<a href="#">Hindi Events</a>
+										</li>
+										<li id="event4">
+											<a href="#">JAM</a>
+										</li>
+										<li id="event5">
+											<a href="#">Line 'em Up</a>
+										</li>
+                                                                                <li id="event6">
+											<a href="#">Potpourri</a>
+										</li>
+                                                                                <li id="event7">
+											<a href="#">Scrabble</a>
+										</li>
+                                                                                <li id="event8">
+											<a href="#">Short Movie</a>
+										</li>
+										<li id="event9">
+											<a href="#">Whose Line Is It Anyway</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+                                                        <li id="team">
+                                                            <a href="#">Team</a>
+                                                        </li>
+						</ul>
+					</div>
+				</nav>
+				
+				<!-- /mp-menu -->
+				<div class="scroller"><!-- this is for emulating position fixed of the nav -->
+				
+					<div class="scroller-inner">
+
+                                                                  <div id="magazine">
+								    <div style="background-image:url(img/pages/1.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/2.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/3.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/4.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/5.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/6.jpg);"></div>
+								    <div style="background-image:url(img/pages/7.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/8.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/9.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/10.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/11.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/12.jpg);"></div>
+								    <div style="background-image:url(img/pages/13.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/14.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/15.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/16.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/17.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/18.jpg);"></div>
+								    <div style="background-image:url(img/pages/19.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/20.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/21.jpg);"></div>
+                                                                    <div style="background-image:url(img/pages/22.jpg);"></div>
+								    <div style="background-image:url(img/pages/23.jpg);"></div>
+                                                                    
+						    </div>
+						   
+						
+					</div><!-- /scroller-inner -->
+				</div><!-- /scroller -->
+
+			</div><!-- /pusher -->
+                        
+  
+    
+		</div><!-- /container -->
+  
+    <script type="text/javascript">
+	
+	
+</script>
+    <script src="js/functions.js"></script>
+    <script></script>
+    <script>
+    function end()
+    {
+	//alert('dfdf');
+	$("#mymodal").modal('hide');
+	$(".modal-backdrop").remove();
+    }
+    $('#mymodal').modal();
+    </script>
+    
+    <p style="position: absolute;right: 0px;bottom: 0px;z-index: 1;">Best viewed in Chrome, Safari.</p>
+    
+    
+     <script type="text/javascript">
+							   
+						    </script>
+    
+    
+    
+</body>
+</html>

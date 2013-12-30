@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(../fonts/font1.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(../fonts/font2.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(../fonts/font3.woff) format('woff');
+}
+    body{
+        overflow: hidden;
+        }
+	
+	       #magazine{
+	width:1020px;
+	height:600px;
+	 margin-left: auto;
+        margin-right: auto;
+	top: 30px;
+	position: absolute;
+
+}
+#magazine .turn-page{
+	background-color:#ccc;
+	background-size:100% 100%;
+}
+
+
+    p#info
+    {
+    position: absolute;
+    font-family: 'Poiret One', cursive;
+    font-size: small;
+    display: inline;
+    bottom: 0.5%;
+    left: 3%;
+    color:#EEEEEE;
+    z-index: 0;
+    }
+    
+    img#bg
+    {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+    }
+    
+    #magazine div{
+      overflow: hidden;
+    }
